@@ -1,22 +1,26 @@
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');                                    // Retrieve the JWT secret from environment variables or use a fallback for testing
+const jwtSecret = process.env.JWT_SECRET || 'your_jwt_secret';          // Securely store this in environment variables
 
-// Mock secret for JWT (ensure this matches your controller)
-const jwtSecret = process.env.JWT_SECRET || 'your_jwt_secret';
-
-// Middleware for protecting routes
-function authenticateToken(req, res, next) {
-    const token = req.headers['authorization']?.split(' ')[1]; // Get the token after 'Bearer '
-    if (!token) {
-        return res.status(401).json({ message: 'No token provided' });
+function authenticateToken(req, res, next) {                            // Middleware function to authenticate token
+    const authHeader = req.headers['authorization'];                    // Fetch the authorization header
+    if (!authHeader) {
+        return res.status(401).json({ message: 'Authorization header is missing' });
     }
 
-    jwt.verify(token, jwtSecret, (err, user) => { // Verify the token
+    const token = authHeader.split(' ')[1];                             // Get the token part (after 'Bearer ')
+    if (!token) {
+        return res.status(401).json({ message: 'Token not provided' });
+    }
+
+    jwt.verify(token, jwtSecret, (err, decodedUser) => {                // Verify the token
         if (err) {
-            return res.status(403).json({ message: 'Invalid token' });
+            console.error('JWT verification error:', err.message);      // Log the error for debugging
+            return res.status(403).json({ message: 'Invalid or expired token' });
         }
 
-        req.user = user; // Attach the user data to the request
-        next(); // Move to the next middleware or route handler
+        req.user = decodedUser;                                         // Attach the decoded user data to the request object
+        console.log('Authenticated user:', decodedUser);                // Log the authenticated user for debugging
+        next();                                                         // Proceed to the next middleware or route handler
     });
 }
 
