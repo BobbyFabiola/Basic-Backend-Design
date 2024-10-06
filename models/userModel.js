@@ -32,11 +32,11 @@ class User {
 
             const lastUser = users[users.length - 1];                           // Determine the next available ID (auto-increment)
             const newId = lastUser ? lastUser.id + 1 : 1;                       // If no users exist, start at ID 1
-
             newUser.id = newId;                                                 // Assign the new ID
 
             users.push(newUser);
             fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
+            
         } catch (error) {
             console.error('Error saving user:', error);
             throw new Error('Could not save user.');

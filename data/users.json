@@ -46,5 +46,11 @@
     "username": "Bryan",
     "email": "bryan@email.com",
     "password": "$2b$10$51IArJw0C4Qvsft/lMatcuwpTmiOmbf.sax3mrRt9r0.OQTJ6gNea"
+  },
+  {
+    "id": 22103328,
+    "username": "Poppy",
+    "email": "poppy@email.com",
+    "password": "$2b$10$AmZWeySO4eNWOP5R5OT8VeBhwqLcYeXZ4/tXmgTHPILqDEb6QyGny"
   }
 ]
