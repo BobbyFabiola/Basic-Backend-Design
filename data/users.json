@@ -25,56 +25,26 @@
   },
   {
     "id": 22103324,
-    "username": "Christian",
-    "email": "christian@email.com",
-    "password": "kolchannikwapassword"
+    "username": "Bobby",
+    "email": "bobby@email.com",
+    "password": "$2b$10$NFQYl/R2EaJI3XeLAzleQezGN0tZB7f6sRE6AtacBgu2UQcbuauOG"
   },
   {
     "id": 22103325,
-    "username": "Victorienne",
-    "email": "victorienne@email.com",
-    "password": "teloiletpassword"
+    "username": "Bobby",
+    "email": "bobby@email.com",
+    "password": "$2b$10$NFQYl/R2EaJI3XeLAzleQezGN0tZB7f6sRE6AtacBgu2UQcbuauOG"
   },
   {
     "id": 22103326,
-    "username": "Katrina",
-    "email": "katrina@email.com",
-    "password": "tingshyattpassword"
+    "username": "Bryan",
+    "email": "bryan@email.com",
+    "password": "$2b$10$51IArJw0C4Qvsft/lMatcuwpTmiOmbf.sax3mrRt9r0.OQTJ6gNea"
   },
   {
     "id": 22103327,
-    "username": "Estelito",
-    "email": "estelito@email.com",
-    "password": "estelititspassword"
-  },
-  {
-    "id": 22103328,
-    "username": "Jonas",
-    "email": "jonas@email.com",
-    "password": "skyshyattpassword"
-  },
-  {
-    "id": 22103329,
-    "username": "Tristan Jay",
-    "email": "TristanJay@email.com",
-    "password": "tejabolspassword"
-  },
-  {
-    "id": "22103331",
-    "username": "Camille",
-    "email": "camille@email.com",
-    "password": "$2b$10$dcq5vBIqsS4qG2znagG57esewIQVy3J7t6W9.S7CFTQE/opc9lt6G"
-  },
-  {
-    "id": "22103332",
-    "username": "Matthew",
-    "email": "matthew@email.com",
-    "password": "$2b$10$/fSM/l9.LqdXKyUK51ZZnePWyR6jgKLxkj1xnD.8eEphDSSyyGide"
-  },
-  {
-    "id": "22103332",
-    "username": "Matthew",
-    "email": "matthew@email.com",
-    "password": "$2b$10$/fSM/l9.LqdXKyUK51ZZnePWyR6jgKLxkj1xnD.8eEphDSSyyGide"
+    "username": "Bryan",
+    "email": "bryan@email.com",
+    "password": "$2b$10$51IArJw0C4Qvsft/lMatcuwpTmiOmbf.sax3mrRt9r0.OQTJ6gNea"
   }
 ]
